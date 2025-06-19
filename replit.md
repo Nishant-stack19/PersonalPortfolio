@@ -2,42 +2,27 @@
 
 ## Overview
 
-This is a modern portfolio website built with HTML, CSS, JavaScript, and PostgreSQL database integration. It features a dark theme with blue accents, fixed navigation bar, comprehensive footer, and a Spline 3D model background. The site showcases personal information, skills, projects, and contact details with database-driven content management capabilities.
+This is a static portfolio website built with HTML, CSS, and JavaScript. It uses a modern dark theme with blue accents and features a responsive side navigation panel. The site is designed to showcase personal information, skills, projects, and contact details in a professional manner.
 
 ## System Architecture
 
 ### Frontend Architecture
-- **Modern Portfolio Website**: HTML/CSS/JavaScript with Spline 3D integration
+- **Static Website**: Pure HTML/CSS/JavaScript implementation without any frameworks
 - **Responsive Design**: Uses Bootstrap 5.3.0 for responsive grid system and components
-- **Dark Theme**: Enhanced CSS with blue color palette and gradient accents
-- **Font Integration**: Google Fonts (Poppins, Fira Code) and Font Awesome icons
-- **Single Page Application**: Fixed navigation bar with smooth scrolling
-- **3D Integration**: Spline 3D model as background element in hero section
-- **Interactive Elements**: Typing animations, floating icons, particle effects
-
-### Backend Architecture
-- **Database**: PostgreSQL with Drizzle ORM for data management
-- **Storage Layer**: Comprehensive data models for users, skills, projects, experience, education
-- **Content Management**: Database-driven portfolio content with full CRUD operations
-- **Contact System**: Message storage and management capabilities
+- **Dark Theme**: Custom CSS with blue color palette and gradient accents
+- **Font Integration**: Google Fonts (Inter, JetBrains Mono) and Font Awesome icons
+- **Single Page Application**: Navigation between sections using JavaScript without page reloads
 
 ### File Structure
 ```
 /
-├── index.html              # Main HTML structure with Spline integration
-├── css/styles.css          # Enhanced styling with CSS variables and animations
-├── js/main.js             # Advanced JavaScript with database integration
+├── index.html          # Main HTML structure
+├── css/styles.css      # Custom styling with CSS variables
+├── js/main.js         # JavaScript functionality
 ├── assets/
-│   ├── icons.svg          # SVG icon definitions
-│   └── resume.pdf         # Resume download file
-├── shared/
-│   └── schema.ts          # Database schema definitions with Drizzle ORM
-├── server/
-│   ├── db.ts             # Database connection configuration
-│   └── storage.ts        # Data access layer with full CRUD operations
-├── drizzle.config.json   # Drizzle ORM configuration
-├── package.json          # Node.js dependencies
-└── .replit              # Replit configuration
+│   ├── icons.svg      # SVG icon definitions
+│   └── resume.pdf     # Placeholder resume file
+└── .replit           # Replit configuration
 ```
 
 ## Key Components
@@ -112,8 +97,6 @@ Changelog:
 - June 19, 2025. Initial setup with side navigation
 - June 19, 2025. Complete redesign with fixed navigation bar and footer
 - June 19, 2025. Added Spline 3D model integration to hero section
-- June 19, 2025. Integrated PostgreSQL database with Drizzle ORM
-- June 19, 2025. Moved Spline 3D model to hero section background
 ```
 
 ## User Preferences

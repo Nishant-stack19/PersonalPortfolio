@@ -325,6 +325,38 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
     text-align: center;
 }
 
+/* Spline 3D Model Container */
+.spline-container {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    background: var(--gradient-secondary);
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.spline-container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl);
+    z-index: -1;
+    animation: rotate 8s linear infinite;
+}
+
+spline-viewer {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-xl);
+    background: transparent;
+}
+
 .floating-elements {
     position: absolute;
     top: 0;
@@ -1231,6 +1263,10 @@ section {
     .hero-stats {
         justify-content: center;
     }
+    
+    .spline-container {
+        height: 400px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1248,6 +1284,10 @@ section {
     
     .floating-elements {
         display: none;
+    }
+    
+    .spline-container {
+        height: 350px;
     }
     
     .avatar-circle {
@@ -1288,6 +1328,11 @@ section {
     .hero-stats {
         gap: 1rem;
         justify-content: space-around;
+    }
+    
+    .spline-container {
+        height: 300px;
+        margin-bottom: 1rem;
     }
     
     .about-stats {
@@ -1335,6 +1380,10 @@ section {
     
     .hero-description {
         font-size: 1rem;
+    }
+    
+    .spline-container {
+        height: 250px;
     }
     
     .btn {

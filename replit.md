@@ -94,7 +94,9 @@ This is a static portfolio website built with HTML, CSS, and JavaScript. It uses
 
 ```
 Changelog:
-- June 19, 2025. Initial setup
+- June 19, 2025. Initial setup with side navigation
+- June 19, 2025. Complete redesign with fixed navigation bar and footer
+- June 19, 2025. Added Spline 3D model integration to hero section
 ```
 
 ## User Preferences
